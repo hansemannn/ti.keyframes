@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: ti.keyframes
+author: Hans Knoechel
+license: Specify your license
+copyright: Copyright (c) 2016 by Your Company
+
+# these should not be edited
+name: ti.keyframes
+moduleid: ti.keyframes
+guid: ba2469a9-0392-4db6-85e1-1377510e25a1
+platform: iphone
+minsdk: 6.0.0.GA

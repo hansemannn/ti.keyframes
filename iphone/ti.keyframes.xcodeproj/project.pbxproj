@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* TiKeyframesModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* TiKeyframesModule.h */; };
+		24DD6CFA1134B3F500162E58 /* TiKeyframesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* TiKeyframesModule.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		24DE9E1111C5FE74003F90F6 /* TiKeyframesModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* TiKeyframesModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* TiKeyframesModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiKeyframesModuleAssets.m */; };
+		AA747D9F0F9514B9006C5449 /* TiKeyframes_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiKeyframes_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		DBD855131DE6550700C1E2C2 /* keyframes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD855121DE6550700C1E2C2 /* keyframes.framework */; };
+		DBD8554F1DE65ADD00C1E2C2 /* KFVector.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD8551F1DE65ADD00C1E2C2 /* KFVector.h */; };
+		DBD855501DE65ADD00C1E2C2 /* KFVector.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855201DE65ADD00C1E2C2 /* KFVector.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD855511DE65ADD00C1E2C2 /* KFVectorAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855221DE65ADD00C1E2C2 /* KFVectorAnimation.h */; };
+		DBD855521DE65ADD00C1E2C2 /* KFVectorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855231DE65ADD00C1E2C2 /* KFVectorAnimation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD855531DE65ADD00C1E2C2 /* KFVectorAnimationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855251DE65ADD00C1E2C2 /* KFVectorAnimationGroup.h */; };
+		DBD855541DE65ADD00C1E2C2 /* KFVectorAnimationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855261DE65ADD00C1E2C2 /* KFVectorAnimationGroup.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD855551DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855281DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.h */; };
+		DBD855561DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855291DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD855571DE65ADD00C1E2C2 /* KFVectorFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD8552B1DE65ADD00C1E2C2 /* KFVectorFeature.h */; };
+		DBD855581DE65ADD00C1E2C2 /* KFVectorFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD8552C1DE65ADD00C1E2C2 /* KFVectorFeature.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD855591DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD8552E1DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.h */; };
+		DBD8555A1DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD8552F1DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD8555B1DE65ADD00C1E2C2 /* KFVectorGradientEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855311DE65ADD00C1E2C2 /* KFVectorGradientEffect.h */; };
+		DBD8555C1DE65ADD00C1E2C2 /* KFVectorGradientEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855321DE65ADD00C1E2C2 /* KFVectorGradientEffect.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD8555D1DE65ADD00C1E2C2 /* KFUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855371DE65ADD00C1E2C2 /* KFUtilities.h */; };
+		DBD8555E1DE65ADD00C1E2C2 /* KFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855381DE65ADD00C1E2C2 /* KFUtilities.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD8555F1DE65ADD00C1E2C2 /* KFVectorAnimationLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD8553A1DE65ADD00C1E2C2 /* KFVectorAnimationLayer.h */; };
+		DBD855601DE65ADD00C1E2C2 /* KFVectorAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD8553B1DE65ADD00C1E2C2 /* KFVectorAnimationLayer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD855611DE65ADD00C1E2C2 /* KFVectorBitmapFeatureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD8553C1DE65ADD00C1E2C2 /* KFVectorBitmapFeatureLayer.h */; };
+		DBD855621DE65ADD00C1E2C2 /* KFVectorBitmapFeatureLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD8553D1DE65ADD00C1E2C2 /* KFVectorBitmapFeatureLayer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD855631DE65ADD00C1E2C2 /* KFVectorFeatureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD8553E1DE65ADD00C1E2C2 /* KFVectorFeatureLayer.h */; };
+		DBD855641DE65ADD00C1E2C2 /* KFVectorFeatureLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD8553F1DE65ADD00C1E2C2 /* KFVectorFeatureLayer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD855651DE65ADD00C1E2C2 /* KFVectorFeatureLayerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855401DE65ADD00C1E2C2 /* KFVectorFeatureLayerInterface.h */; };
+		DBD855661DE65ADD00C1E2C2 /* KFVectorGradientFeatureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855411DE65ADD00C1E2C2 /* KFVectorGradientFeatureLayer.h */; };
+		DBD855671DE65ADD00C1E2C2 /* KFVectorGradientFeatureLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855421DE65ADD00C1E2C2 /* KFVectorGradientFeatureLayer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD855681DE65ADD00C1E2C2 /* KFVectorLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855431DE65ADD00C1E2C2 /* KFVectorLayer.h */; };
+		DBD855691DE65ADD00C1E2C2 /* KFVectorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855441DE65ADD00C1E2C2 /* KFVectorLayer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD8556A1DE65ADD00C1E2C2 /* KFVectorLayerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855451DE65ADD00C1E2C2 /* KFVectorLayerHelper.h */; };
+		DBD8556B1DE65ADD00C1E2C2 /* KFVectorLayerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855461DE65ADD00C1E2C2 /* KFVectorLayerHelper.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD8556C1DE65ADD00C1E2C2 /* KFVectorBezierPathsHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855481DE65ADD00C1E2C2 /* KFVectorBezierPathsHelper.h */; };
+		DBD8556D1DE65ADD00C1E2C2 /* KFVectorBezierPathsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855491DE65ADD00C1E2C2 /* KFVectorBezierPathsHelper.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD8556E1DE65ADD00C1E2C2 /* KFVectorParsingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD8554A1DE65ADD00C1E2C2 /* KFVectorParsingHelper.h */; };
+		DBD8556F1DE65ADD00C1E2C2 /* KFVectorParsingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD8554B1DE65ADD00C1E2C2 /* KFVectorParsingHelper.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD855701DE65ADD00C1E2C2 /* KFVectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD8554D1DE65ADD00C1E2C2 /* KFVectorView.h */; };
+		DBD855711DE65ADD00C1E2C2 /* KFVectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD8554E1DE65ADD00C1E2C2 /* KFVectorView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DBD855741DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855721DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.h */; };
+		DBD855751DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855731DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.m */; };
+		DBD855781DE65C2200C1E2C2 /* TiKeyframesVectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855761DE65C2200C1E2C2 /* TiKeyframesVectorView.h */; };
+		DBD855791DE65C2200C1E2C2 /* TiKeyframesVectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855771DE65C2200C1E2C2 /* TiKeyframesVectorView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ti.keyframes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* TiKeyframesModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiKeyframesModule.h; path = Classes/TiKeyframesModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* TiKeyframesModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiKeyframesModule.m; path = Classes/TiKeyframesModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* TiKeyframesModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiKeyframesModuleAssets.h; path = Classes/TiKeyframesModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* TiKeyframesModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiKeyframesModuleAssets.m; path = Classes/TiKeyframesModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* TiKeyframes_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiKeyframes_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libti.keyframes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libti.keyframes.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD855121DE6550700C1E2C2 /* keyframes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = keyframes.framework; path = platform/keyframes.framework; sourceTree = "<group>"; };
+		DBD8551E1DE65ADD00C1E2C2 /* .valueObjectConfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .valueObjectConfig; sourceTree = "<group>"; };
+		DBD8551F1DE65ADD00C1E2C2 /* KFVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVector.h; sourceTree = "<group>"; };
+		DBD855201DE65ADD00C1E2C2 /* KFVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVector.m; sourceTree = "<group>"; };
+		DBD855211DE65ADD00C1E2C2 /* KFVector.value */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KFVector.value; sourceTree = "<group>"; };
+		DBD855221DE65ADD00C1E2C2 /* KFVectorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorAnimation.h; sourceTree = "<group>"; };
+		DBD855231DE65ADD00C1E2C2 /* KFVectorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorAnimation.m; sourceTree = "<group>"; };
+		DBD855241DE65ADD00C1E2C2 /* KFVectorAnimation.value */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KFVectorAnimation.value; sourceTree = "<group>"; };
+		DBD855251DE65ADD00C1E2C2 /* KFVectorAnimationGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorAnimationGroup.h; sourceTree = "<group>"; };
+		DBD855261DE65ADD00C1E2C2 /* KFVectorAnimationGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorAnimationGroup.m; sourceTree = "<group>"; };
+		DBD855271DE65ADD00C1E2C2 /* KFVectorAnimationGroup.value */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KFVectorAnimationGroup.value; sourceTree = "<group>"; };
+		DBD855281DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorAnimationKeyValue.h; sourceTree = "<group>"; };
+		DBD855291DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorAnimationKeyValue.m; sourceTree = "<group>"; };
+		DBD8552A1DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.value */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KFVectorAnimationKeyValue.value; sourceTree = "<group>"; };
+		DBD8552B1DE65ADD00C1E2C2 /* KFVectorFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorFeature.h; sourceTree = "<group>"; };
+		DBD8552C1DE65ADD00C1E2C2 /* KFVectorFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorFeature.m; sourceTree = "<group>"; };
+		DBD8552D1DE65ADD00C1E2C2 /* KFVectorFeature.value */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KFVectorFeature.value; sourceTree = "<group>"; };
+		DBD8552E1DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorFeatureKeyFrame.h; sourceTree = "<group>"; };
+		DBD8552F1DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorFeatureKeyFrame.m; sourceTree = "<group>"; };
+		DBD855301DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.value */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KFVectorFeatureKeyFrame.value; sourceTree = "<group>"; };
+		DBD855311DE65ADD00C1E2C2 /* KFVectorGradientEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorGradientEffect.h; sourceTree = "<group>"; };
+		DBD855321DE65ADD00C1E2C2 /* KFVectorGradientEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorGradientEffect.m; sourceTree = "<group>"; };
+		DBD855331DE65ADD00C1E2C2 /* KFVectorGradientEffect.value */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KFVectorGradientEffect.value; sourceTree = "<group>"; };
+		DBD855351DE65ADD00C1E2C2 /* fb-copyright-header-comment.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "fb-copyright-header-comment.js"; sourceTree = "<group>"; };
+		DBD855371DE65ADD00C1E2C2 /* KFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFUtilities.h; sourceTree = "<group>"; };
+		DBD855381DE65ADD00C1E2C2 /* KFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFUtilities.m; sourceTree = "<group>"; };
+		DBD8553A1DE65ADD00C1E2C2 /* KFVectorAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorAnimationLayer.h; sourceTree = "<group>"; };
+		DBD8553B1DE65ADD00C1E2C2 /* KFVectorAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorAnimationLayer.m; sourceTree = "<group>"; };
+		DBD8553C1DE65ADD00C1E2C2 /* KFVectorBitmapFeatureLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorBitmapFeatureLayer.h; sourceTree = "<group>"; };
+		DBD8553D1DE65ADD00C1E2C2 /* KFVectorBitmapFeatureLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorBitmapFeatureLayer.m; sourceTree = "<group>"; };
+		DBD8553E1DE65ADD00C1E2C2 /* KFVectorFeatureLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorFeatureLayer.h; sourceTree = "<group>"; };
+		DBD8553F1DE65ADD00C1E2C2 /* KFVectorFeatureLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorFeatureLayer.m; sourceTree = "<group>"; };
+		DBD855401DE65ADD00C1E2C2 /* KFVectorFeatureLayerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorFeatureLayerInterface.h; sourceTree = "<group>"; };
+		DBD855411DE65ADD00C1E2C2 /* KFVectorGradientFeatureLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorGradientFeatureLayer.h; sourceTree = "<group>"; };
+		DBD855421DE65ADD00C1E2C2 /* KFVectorGradientFeatureLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorGradientFeatureLayer.m; sourceTree = "<group>"; };
+		DBD855431DE65ADD00C1E2C2 /* KFVectorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorLayer.h; sourceTree = "<group>"; };
+		DBD855441DE65ADD00C1E2C2 /* KFVectorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorLayer.m; sourceTree = "<group>"; };
+		DBD855451DE65ADD00C1E2C2 /* KFVectorLayerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorLayerHelper.h; sourceTree = "<group>"; };
+		DBD855461DE65ADD00C1E2C2 /* KFVectorLayerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorLayerHelper.m; sourceTree = "<group>"; };
+		DBD855481DE65ADD00C1E2C2 /* KFVectorBezierPathsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorBezierPathsHelper.h; sourceTree = "<group>"; };
+		DBD855491DE65ADD00C1E2C2 /* KFVectorBezierPathsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorBezierPathsHelper.m; sourceTree = "<group>"; };
+		DBD8554A1DE65ADD00C1E2C2 /* KFVectorParsingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorParsingHelper.h; sourceTree = "<group>"; };
+		DBD8554B1DE65ADD00C1E2C2 /* KFVectorParsingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorParsingHelper.m; sourceTree = "<group>"; };
+		DBD8554D1DE65ADD00C1E2C2 /* KFVectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVectorView.h; sourceTree = "<group>"; };
+		DBD8554E1DE65ADD00C1E2C2 /* KFVectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVectorView.m; sourceTree = "<group>"; };
+		DBD855721DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiKeyframesVectorViewProxy.h; path = Classes/TiKeyframesVectorViewProxy.h; sourceTree = "<group>"; };
+		DBD855731DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiKeyframesVectorViewProxy.m; path = Classes/TiKeyframesVectorViewProxy.m; sourceTree = "<group>"; };
+		DBD855761DE65C2200C1E2C2 /* TiKeyframesVectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiKeyframesVectorView.h; path = Classes/TiKeyframesVectorView.h; sourceTree = "<group>"; };
+		DBD855771DE65C2200C1E2C2 /* TiKeyframesVectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiKeyframesVectorView.m; path = Classes/TiKeyframesVectorView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBD855131DE6550700C1E2C2 /* keyframes.framework in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libti.keyframes.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ti.keyframes */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = ti.keyframes;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBD855121DE6550700C1E2C2 /* keyframes.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DBD8551C1DE65ADD00C1E2C2 /* FBKeyframes */,
+				24DE9E0F11C5FE74003F90F6 /* TiKeyframesModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* TiKeyframesModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* TiKeyframesModule.h */,
+				24DD6CF81134B3F500162E58 /* TiKeyframesModule.m */,
+				DBD855761DE65C2200C1E2C2 /* TiKeyframesVectorView.h */,
+				DBD855771DE65C2200C1E2C2 /* TiKeyframesVectorView.m */,
+				DBD855721DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.h */,
+				DBD855731DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* TiKeyframes_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		DBD8551C1DE65ADD00C1E2C2 /* FBKeyframes */ = {
+			isa = PBXGroup;
+			children = (
+				DBD8551D1DE65ADD00C1E2C2 /* DataModel */,
+				DBD855361DE65ADD00C1E2C2 /* Helpers */,
+				DBD855391DE65ADD00C1E2C2 /* Layers */,
+				DBD855471DE65ADD00C1E2C2 /* ParsingHelpers */,
+				DBD8554C1DE65ADD00C1E2C2 /* Views */,
+			);
+			name = FBKeyframes;
+			path = Classes/FBKeyframes;
+			sourceTree = "<group>";
+		};
+		DBD8551D1DE65ADD00C1E2C2 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				DBD8551E1DE65ADD00C1E2C2 /* .valueObjectConfig */,
+				DBD8551F1DE65ADD00C1E2C2 /* KFVector.h */,
+				DBD855201DE65ADD00C1E2C2 /* KFVector.m */,
+				DBD855211DE65ADD00C1E2C2 /* KFVector.value */,
+				DBD855221DE65ADD00C1E2C2 /* KFVectorAnimation.h */,
+				DBD855231DE65ADD00C1E2C2 /* KFVectorAnimation.m */,
+				DBD855241DE65ADD00C1E2C2 /* KFVectorAnimation.value */,
+				DBD855251DE65ADD00C1E2C2 /* KFVectorAnimationGroup.h */,
+				DBD855261DE65ADD00C1E2C2 /* KFVectorAnimationGroup.m */,
+				DBD855271DE65ADD00C1E2C2 /* KFVectorAnimationGroup.value */,
+				DBD855281DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.h */,
+				DBD855291DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.m */,
+				DBD8552A1DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.value */,
+				DBD8552B1DE65ADD00C1E2C2 /* KFVectorFeature.h */,
+				DBD8552C1DE65ADD00C1E2C2 /* KFVectorFeature.m */,
+				DBD8552D1DE65ADD00C1E2C2 /* KFVectorFeature.value */,
+				DBD8552E1DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.h */,
+				DBD8552F1DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.m */,
+				DBD855301DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.value */,
+				DBD855311DE65ADD00C1E2C2 /* KFVectorGradientEffect.h */,
+				DBD855321DE65ADD00C1E2C2 /* KFVectorGradientEffect.m */,
+				DBD855331DE65ADD00C1E2C2 /* KFVectorGradientEffect.value */,
+				DBD855341DE65ADD00C1E2C2 /* remodel-plugins */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		DBD855341DE65ADD00C1E2C2 /* remodel-plugins */ = {
+			isa = PBXGroup;
+			children = (
+				DBD855351DE65ADD00C1E2C2 /* fb-copyright-header-comment.js */,
+			);
+			path = "remodel-plugins";
+			sourceTree = "<group>";
+		};
+		DBD855361DE65ADD00C1E2C2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBD855371DE65ADD00C1E2C2 /* KFUtilities.h */,
+				DBD855381DE65ADD00C1E2C2 /* KFUtilities.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DBD855391DE65ADD00C1E2C2 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				DBD8553A1DE65ADD00C1E2C2 /* KFVectorAnimationLayer.h */,
+				DBD8553B1DE65ADD00C1E2C2 /* KFVectorAnimationLayer.m */,
+				DBD8553C1DE65ADD00C1E2C2 /* KFVectorBitmapFeatureLayer.h */,
+				DBD8553D1DE65ADD00C1E2C2 /* KFVectorBitmapFeatureLayer.m */,
+				DBD8553E1DE65ADD00C1E2C2 /* KFVectorFeatureLayer.h */,
+				DBD8553F1DE65ADD00C1E2C2 /* KFVectorFeatureLayer.m */,
+				DBD855401DE65ADD00C1E2C2 /* KFVectorFeatureLayerInterface.h */,
+				DBD855411DE65ADD00C1E2C2 /* KFVectorGradientFeatureLayer.h */,
+				DBD855421DE65ADD00C1E2C2 /* KFVectorGradientFeatureLayer.m */,
+				DBD855431DE65ADD00C1E2C2 /* KFVectorLayer.h */,
+				DBD855441DE65ADD00C1E2C2 /* KFVectorLayer.m */,
+				DBD855451DE65ADD00C1E2C2 /* KFVectorLayerHelper.h */,
+				DBD855461DE65ADD00C1E2C2 /* KFVectorLayerHelper.m */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		DBD855471DE65ADD00C1E2C2 /* ParsingHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBD855481DE65ADD00C1E2C2 /* KFVectorBezierPathsHelper.h */,
+				DBD855491DE65ADD00C1E2C2 /* KFVectorBezierPathsHelper.m */,
+				DBD8554A1DE65ADD00C1E2C2 /* KFVectorParsingHelper.h */,
+				DBD8554B1DE65ADD00C1E2C2 /* KFVectorParsingHelper.m */,
+			);
+			path = ParsingHelpers;
+			sourceTree = "<group>";
+		};
+		DBD8554C1DE65ADD00C1E2C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBD8554D1DE65ADD00C1E2C2 /* KFVectorView.h */,
+				DBD8554E1DE65ADD00C1E2C2 /* KFVectorView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBD855511DE65ADD00C1E2C2 /* KFVectorAnimation.h in Headers */,
+				DBD8554F1DE65ADD00C1E2C2 /* KFVector.h in Headers */,
+				DBD855551DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.h in Headers */,
+				DBD855611DE65ADD00C1E2C2 /* KFVectorBitmapFeatureLayer.h in Headers */,
+				DBD8555F1DE65ADD00C1E2C2 /* KFVectorAnimationLayer.h in Headers */,
+				DBD855631DE65ADD00C1E2C2 /* KFVectorFeatureLayer.h in Headers */,
+				DBD8555B1DE65ADD00C1E2C2 /* KFVectorGradientEffect.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* TiKeyframes_Prefix.pch in Headers */,
+				DBD855781DE65C2200C1E2C2 /* TiKeyframesVectorView.h in Headers */,
+				DBD855591DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.h in Headers */,
+				24DD6CF91134B3F500162E58 /* TiKeyframesModule.h in Headers */,
+				DBD8556A1DE65ADD00C1E2C2 /* KFVectorLayerHelper.h in Headers */,
+				DBD8555D1DE65ADD00C1E2C2 /* KFUtilities.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* TiKeyframesModuleAssets.h in Headers */,
+				DBD8556E1DE65ADD00C1E2C2 /* KFVectorParsingHelper.h in Headers */,
+				DBD855531DE65ADD00C1E2C2 /* KFVectorAnimationGroup.h in Headers */,
+				DBD855701DE65ADD00C1E2C2 /* KFVectorView.h in Headers */,
+				DBD855651DE65ADD00C1E2C2 /* KFVectorFeatureLayerInterface.h in Headers */,
+				DBD855681DE65ADD00C1E2C2 /* KFVectorLayer.h in Headers */,
+				DBD855571DE65ADD00C1E2C2 /* KFVectorFeature.h in Headers */,
+				DBD8556C1DE65ADD00C1E2C2 /* KFVectorBezierPathsHelper.h in Headers */,
+				DBD855741DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.h in Headers */,
+				DBD855661DE65ADD00C1E2C2 /* KFVectorGradientFeatureLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* ti.keyframes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ti.keyframes" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ti.keyframes;
+			productName = ti.keyframes;
+			productReference = D2AAC07E0554694100DB518D /* libti.keyframes.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ti.keyframes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* ti.keyframes */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* ti.keyframes */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBD8555A1DE65ADD00C1E2C2 /* KFVectorFeatureKeyFrame.m in Sources */,
+				DBD8556B1DE65ADD00C1E2C2 /* KFVectorLayerHelper.m in Sources */,
+				DBD8555E1DE65ADD00C1E2C2 /* KFUtilities.m in Sources */,
+				DBD855641DE65ADD00C1E2C2 /* KFVectorFeatureLayer.m in Sources */,
+				DBD8556F1DE65ADD00C1E2C2 /* KFVectorParsingHelper.m in Sources */,
+				DBD855581DE65ADD00C1E2C2 /* KFVectorFeature.m in Sources */,
+				DBD8555C1DE65ADD00C1E2C2 /* KFVectorGradientEffect.m in Sources */,
+				DBD855751DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.m in Sources */,
+				DBD855561DE65ADD00C1E2C2 /* KFVectorAnimationKeyValue.m in Sources */,
+				DBD855621DE65ADD00C1E2C2 /* KFVectorBitmapFeatureLayer.m in Sources */,
+				DBD855541DE65ADD00C1E2C2 /* KFVectorAnimationGroup.m in Sources */,
+				DBD855791DE65C2200C1E2C2 /* TiKeyframesVectorView.m in Sources */,
+				DBD855711DE65ADD00C1E2C2 /* KFVectorView.m in Sources */,
+				DBD855501DE65ADD00C1E2C2 /* KFVector.m in Sources */,
+				DBD855521DE65ADD00C1E2C2 /* KFVectorAnimation.m in Sources */,
+				DBD8556D1DE65ADD00C1E2C2 /* KFVectorBezierPathsHelper.m in Sources */,
+				DBD855601DE65ADD00C1E2C2 /* KFVectorAnimationLayer.m in Sources */,
+				DBD855671DE65ADD00C1E2C2 /* KFVectorGradientFeatureLayer.m in Sources */,
+				DBD855691DE65ADD00C1E2C2 /* KFVectorLayer.m in Sources */,
+				24DD6CFA1134B3F500162E58 /* TiKeyframesModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* TiKeyframesModuleAssets.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* ti.keyframes */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiKeyframes.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/platform",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiKeyframes_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ti.keyframes;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/TiKeyframes.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/platform",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiKeyframes_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ti.keyframes;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiKeyframes.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiKeyframes_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ti.keyframes;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				DSTROOT = /tmp/TiKeyframes.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiKeyframes_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ti.keyframes;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ti.keyframes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ti.keyframes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

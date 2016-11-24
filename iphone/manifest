@@ -7,8 +7,8 @@ apiversion: 2
 architectures: armv7 arm64 i386 x86_64
 description: ti.keyframes
 author: Hans Knoechel
-license: Specify your license
-copyright: Copyright (c) 2016 by Your Company
+license: Apache 2.0
+copyright: Copyright (c) 2016 by Hans Knoechel
 
 # these should not be edited
 name: ti.keyframes

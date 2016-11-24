@@ -1,39 +1,66 @@
-// This is a test harness for your module
-// You should do something interesting in this harness
-// to test out the module and to provide instructions
-// to users on how to use it by example.
+var TiKeyframes = require('ti.keyframes');
 
-
-// open a single window
 var win = Ti.UI.createWindow({
-	backgroundColor:'white'
+    backgroundColor: '#fff',
+    title: 'Ti.Keyframes Demo'
 });
-var label = Ti.UI.createLabel();
-win.add(label);
-win.open();
 
-// TODO: write your module tests here
-var ti_keyframes = require('ti.keyframes');
-Ti.API.info("module is => " + ti_keyframes);
+var nav = Ti.UI.iOS.createNavigationWindow({
+    window: win
+});
 
-label.text = ti_keyframes.example();
+var offset = 0;
 
-Ti.API.info("module exampleProp is => " + ti_keyframes.exampleProp);
-ti_keyframes.exampleProp = "This is a test value";
+var view = TiKeyframes.createVectorView({
+	resource: 'sample_logo'
+});
 
-if (Ti.Platform.name == "android") {
-	var proxy = ti_keyframes.createExample({
-		message: "Creating an example Proxy",
-		backgroundColor: "red",
-		width: 100,
-		height: 100,
-		top: 100,
-		left: 150
-	});
+win.add(view);
 
-	proxy.printMessage("Hello world!");
-	proxy.message = "Hi world!.  It's me again.";
-	proxy.printMessage("Hello world!");
-	win.add(proxy);
+win.add(createButtonWithAction('Start animation', startAnimation));
+win.add(createButtonWithAction('Pause animation', pauseAnimation));
+win.add(createButtonWithAction('Resume animation', resumeAnimation));
+
+var slider = Ti.UI.createSlider({
+    value: 0,
+    min: 0,
+    max: 1,
+    bottom: 50,
+    width: 300
+});
+
+slider.addEventListener('change', function(e) {
+    view.seekToProgress(e.value);
+});
+
+win.addEventListener('open', function() {
+	view.initialize();
+})
+
+win.add(slider);
+nav.open();
+
+function createButtonWithAction(title, action) {
+    offset += 40;
+    
+    var btn = Ti.UI.createButton({
+        title: title,
+    	top: offset
+    });
+
+    btn.addEventListener('click', action);
+    
+    return btn;
 }
 
+function startAnimation() {
+    view.startAnimation();
+}
+
+function pauseAnimation() {
+    view.pauseAnimation();
+}
+
+function resumeAnimation() {
+    view.resumeAnimation();
+}

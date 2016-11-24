@@ -28,7 +28,6 @@
 		24DE9E1211C5FE74003F90F6 /* TiKeyframesModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiKeyframesModuleAssets.m */; };
 		AA747D9F0F9514B9006C5449 /* TiKeyframes_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiKeyframes_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
-		DBD855131DE6550700C1E2C2 /* keyframes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD855121DE6550700C1E2C2 /* keyframes.framework */; };
 		DBD8554F1DE65ADD00C1E2C2 /* KFVector.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD8551F1DE65ADD00C1E2C2 /* KFVector.h */; };
 		DBD855501DE65ADD00C1E2C2 /* KFVector.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD855201DE65ADD00C1E2C2 /* KFVector.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		DBD855511DE65ADD00C1E2C2 /* KFVectorAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD855221DE65ADD00C1E2C2 /* KFVectorAnimation.h */; };
@@ -89,7 +88,6 @@
 		AA747D9E0F9514B9006C5449 /* TiKeyframes_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiKeyframes_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libti.keyframes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libti.keyframes.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBD855121DE6550700C1E2C2 /* keyframes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = keyframes.framework; path = platform/keyframes.framework; sourceTree = "<group>"; };
 		DBD8551E1DE65ADD00C1E2C2 /* .valueObjectConfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .valueObjectConfig; sourceTree = "<group>"; };
 		DBD8551F1DE65ADD00C1E2C2 /* KFVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFVector.h; sourceTree = "<group>"; };
 		DBD855201DE65ADD00C1E2C2 /* KFVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFVector.m; sourceTree = "<group>"; };
@@ -138,6 +136,7 @@
 		DBD855731DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiKeyframesVectorViewProxy.m; path = Classes/TiKeyframesVectorViewProxy.m; sourceTree = "<group>"; };
 		DBD855761DE65C2200C1E2C2 /* TiKeyframesVectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiKeyframesVectorView.h; path = Classes/TiKeyframesVectorView.h; sourceTree = "<group>"; };
 		DBD855771DE65C2200C1E2C2 /* TiKeyframesVectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiKeyframesVectorView.m; path = Classes/TiKeyframesVectorView.m; sourceTree = "<group>"; };
+		DBD8557A1DE6953500C1E2C2 /* sample_logo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = sample_logo.json; path = Resources/sample_logo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +144,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBD855131DE6550700C1E2C2 /* keyframes.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +173,6 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DBD855121DE6550700C1E2C2 /* keyframes.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -200,6 +197,7 @@
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DBD8557A1DE6953500C1E2C2 /* sample_logo.json */,
 				AA747D9E0F9514B9006C5449 /* TiKeyframes_Prefix.pch */,
 				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
 			);

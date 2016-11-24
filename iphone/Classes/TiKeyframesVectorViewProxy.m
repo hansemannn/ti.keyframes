@@ -13,15 +13,17 @@
 
 - (KFVector *)loadSampleVectorFromDisk
 {
-    static KFVector *sampleVector;
+    static KFVector *_sampleVector;
     static dispatch_once_t onceToken;
+    
     dispatch_once(&onceToken, ^{
-        NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:[self valueForKey:@"resource"] ofType:@"json" inDirectory:nil];
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:[self valueForKey:@"resource"] ofType:@"json" inDirectory:nil];
         NSData *data = [NSData dataWithContentsOfFile:filePath];
         NSDictionary *sampleVectorDictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-        sampleVector = KFVectorFromDictionary(sampleVectorDictionary);
+        _sampleVector = KFVectorFromDictionary(sampleVectorDictionary);
     });
-    return sampleVector;
+    
+    return _sampleVector;
 }
 
 - (void)initialize:(id)unused
@@ -38,23 +40,27 @@
     [[(TiKeyframesVectorView*)[self view] layer] addSublayer:sampleVectorLayer];
 }
 
-- (void)startAnimation
+- (void)startAnimation:(id)unused
 {
+    ENSURE_UI_THREAD(startAnimation, unused);
     [sampleVectorLayer startAnimation];
 }
 
-- (void)pauseAnimation
+- (void)pauseAnimation:(id)unused
 {
+    ENSURE_UI_THREAD(pauseAnimation, unused);
     [sampleVectorLayer pauseAnimation];
 }
 
-- (void)resumeAnimation
+- (void)resumeAnimation:(id)unused
 {
+    ENSURE_UI_THREAD(resumeAnimation, unused);
     [sampleVectorLayer resumeAnimation];
 }
 
-- (void)resumeAnimation:(id)value
+- (void)seekToProgress:(id)value
 {
+    ENSURE_UI_THREAD(seekToProgress, value);
     ENSURE_SINGLE_ARG(value, NSNumber);
     
     [sampleVectorLayer seekToProgress:[TiUtils floatValue:value]];

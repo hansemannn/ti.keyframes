@@ -136,7 +136,6 @@
 		DBD855731DE65C1200C1E2C2 /* TiKeyframesVectorViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiKeyframesVectorViewProxy.m; path = Classes/TiKeyframesVectorViewProxy.m; sourceTree = "<group>"; };
 		DBD855761DE65C2200C1E2C2 /* TiKeyframesVectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiKeyframesVectorView.h; path = Classes/TiKeyframesVectorView.h; sourceTree = "<group>"; };
 		DBD855771DE65C2200C1E2C2 /* TiKeyframesVectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiKeyframesVectorView.m; path = Classes/TiKeyframesVectorView.m; sourceTree = "<group>"; };
-		DBD8557A1DE6953500C1E2C2 /* sample_logo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = sample_logo.json; path = Resources/sample_logo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +196,6 @@
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DBD8557A1DE6953500C1E2C2 /* sample_logo.json */,
 				AA747D9E0F9514B9006C5449 /* TiKeyframes_Prefix.pch */,
 				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
 			);

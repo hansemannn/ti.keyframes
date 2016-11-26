@@ -10,7 +10,7 @@
 #import "KFVectorParsingHelper.h"
 
 @interface TiKeyframesVectorView : TiUIView {
-    KFVector *vectorLayer;
+
 }
 
 @end

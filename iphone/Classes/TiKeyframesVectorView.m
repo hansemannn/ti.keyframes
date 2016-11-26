@@ -1,10 +1,9 @@
 /**
- * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2016 by Appcelerator, Inc. All Rights Reserved.
+ * Ti.Keyframes
+ * Copyright (c) 2016 by Hans Knöchel, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  */
-
 #import "TiKeyframesVectorView.h"
 
 @implementation TiKeyframesVectorView

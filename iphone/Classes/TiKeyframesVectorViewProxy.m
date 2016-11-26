@@ -1,10 +1,9 @@
 /**
- * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2016 by Appcelerator, Inc. All Rights Reserved.
+ * Ti.Keyframes
+ * Copyright (c) 2016 by Hans Knöchel, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  */
-
 #import "TiKeyframesVectorViewProxy.h"
 #import "TiUtils.h"
 #import "TiKeyframesVectorView.h"
@@ -43,40 +42,36 @@
     return _sampleVector;
 }
 
-- (KFVectorLayer*)sampleVectorLayer
+- (void)initialize:(id)unused
 {
-    if (!sampleVectorLayer) {
-        KFVector *sampleVector = [self loadSampleVectorFromDisk];
-        
-        sampleVectorLayer = [KFVectorLayer new];
-        
-        const CGFloat shortSide = MIN(CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
-        const CGFloat longSide = MAX(CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
-        sampleVectorLayer.frame = CGRectMake(shortSide / 4, longSide / 2 - shortSide / 4, shortSide / 2, shortSide / 2);
-        sampleVectorLayer.faceModel = sampleVector;
-        
-        [[(TiKeyframesVectorView*)[self view] layer] addSublayer:sampleVectorLayer];
-    }
+    KFVector *sampleVector = [self loadSampleVectorFromDisk];
     
-    return sampleVectorLayer;
+    sampleVectorLayer = [KFVectorLayer new];
+    
+    const CGFloat shortSide = MIN(CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
+    const CGFloat longSide = MAX(CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
+    sampleVectorLayer.frame = CGRectMake(shortSide / 4, longSide / 2 - shortSide / 4, shortSide / 2, shortSide / 2);
+    sampleVectorLayer.faceModel = sampleVector;
+    
+    [[(TiKeyframesVectorView*)[self view] layer] addSublayer:sampleVectorLayer];
 }
 
 - (void)startAnimation:(id)unused
 {
     ENSURE_UI_THREAD(startAnimation, unused);
-    [[self sampleVectorLayer] startAnimation];
+    [sampleVectorLayer startAnimation];
 }
 
 - (void)pauseAnimation:(id)unused
 {
     ENSURE_UI_THREAD(pauseAnimation, unused);
-    [[self sampleVectorLayer] pauseAnimation];
+    [sampleVectorLayer pauseAnimation];
 }
 
 - (void)resumeAnimation:(id)unused
 {
     ENSURE_UI_THREAD(resumeAnimation, unused);
-    [[self sampleVectorLayer] resumeAnimation];
+    [sampleVectorLayer resumeAnimation];
 }
 
 - (void)seekToProgress:(id)value
@@ -84,7 +79,7 @@
     ENSURE_UI_THREAD(seekToProgress, value);
     ENSURE_SINGLE_ARG(value, NSNumber);
     
-    [[self sampleVectorLayer] seekToProgress:[TiUtils floatValue:value]];
+    [sampleVectorLayer seekToProgress:[TiUtils floatValue:value]];
 }
 
 @end

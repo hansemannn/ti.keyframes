@@ -21,7 +21,7 @@
     static KFVector *_sampleVector;
     static dispatch_once_t onceToken;
     
-    if ([self valueForKey:@"resource"]) {
+    if (![self valueForKey:@"resource"]) {
         [self throwException:@"Resource was null"
                    subreason:@"The specified JSON resource was null, please define it by setting the 'resource' key."
                     location:CODELOCATION];
@@ -53,7 +53,9 @@
     sampleVectorLayer.frame = CGRectMake(shortSide / 4, longSide / 2 - shortSide / 4, shortSide / 2, shortSide / 2);
     sampleVectorLayer.faceModel = sampleVector;
     
-    [[(TiKeyframesVectorView*)[self view] layer] addSublayer:sampleVectorLayer];
+    TiThreadPerformOnMainThread(^{
+        [[(TiKeyframesVectorView*)[self view] layer] addSublayer:sampleVectorLayer];
+    }, NO);
 }
 
 - (void)startAnimation:(id)unused
@@ -76,8 +78,8 @@
 
 - (void)seekToProgress:(id)value
 {
-    ENSURE_UI_THREAD(seekToProgress, value);
     ENSURE_SINGLE_ARG(value, NSNumber);
+    ENSURE_UI_THREAD(seekToProgress, value);
     
     [sampleVectorLayer seekToProgress:[TiUtils floatValue:value]];
 }

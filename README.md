@@ -5,7 +5,8 @@
 Ti.Keyframes is an open-source project to support the Facebook Keyframes library in Appcelerator's 
 Titanium Mobile. The module is currently supports starting, pausing, resuming and seeking a keyframe.
 
-For the Android version of this module, check [m1ga/ti.keyframes](https://github.com/m1ga/ti.keyframes) :rocket:
+- For the Android version of this module, check out [m1ga/ti.keyframes](https://github.com/m1ga/ti.keyframes) :rocket:
+- For the Airbnb Lottie library, check out [ti.lottie](https://github.com/hansemannn/ti.lottie) :rocket:
 
 Requirements
 ---------------

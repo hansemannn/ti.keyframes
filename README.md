@@ -1,6 +1,8 @@
 # 🖼 Ti.Keyframes
 [![Contact](http://hans-knoechel.de/shields/shield-twitter.svg)](http://twitter.com/hansemannnn)
 
+> ⚠️ This module moved to the cross-platform reposiroty [Ti.Animation](https://github.com/m1ga/ti.animation) to support both the Keyframes and the Lottie library in on centralized repository for iOS and Android. Please update to Ti.Animation, thx! ⚠️
+
  Summary
 ---------------
 Ti.Keyframes is an open-source project to support the Facebook Keyframes library in Appcelerator's 
